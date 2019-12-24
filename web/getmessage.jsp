@@ -18,9 +18,13 @@
       String name = (String) session.getAttribute("name");
       MessageDAo messageDAo = new MessageDAo();
       List<Message> list = messageDAo.getMessage(name);
-      for(Message list1: list){
-          out.write(list1.getBook_name() + " <---> " + list1.getDate());
-          out.write("<br>");
+      if(list.size() == 0)
+          out.println("您还未借阅任何书籍");
+      else {
+          for (Message list1 : list) {
+              out.write(list1.getBook_name() + " <---> " + list1.getDate());
+              out.write("<br>");
+          }
       }
 %><br>
 <hr>

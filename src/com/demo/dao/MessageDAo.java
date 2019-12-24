@@ -20,7 +20,7 @@ import java.util.List;
  */
 public class MessageDAo {
     public List<Message> getMessage(String name){//查阅所借书
-        List<Message> list = new ArrayList<>();
+        List<Message> list = new ArrayList<Message>();
         Message m = null;
         Connection connection = null;
         PreparedStatement preparedStatement = null;

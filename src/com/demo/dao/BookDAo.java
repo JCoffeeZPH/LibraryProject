@@ -37,7 +37,7 @@ public class BookDAo {
 
     }
 
-    public Book retandborBook(String book_name){//借/还书
+    public Book retandborBook(String book_name){//借/还书是否存在本书
         Book book = null;
         Connection  connection = null;
         PreparedStatement preparedStatement = null;

@@ -89,7 +89,7 @@ public class UserDAo {
 
 
     public List<String> showBook(){//剩余各种书的信息
-        List<String> list = new ArrayList<>();
+        List<String> list = new ArrayList<String>();
         int i = 0;
         Connection connection = null;
         PreparedStatement preparedStatement = null;
